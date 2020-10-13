@@ -11,14 +11,6 @@
         Go to secured page
       </router-link>
     </h2>
-    <h2>
-      <router-link
-          to="/frontend/catalogs"
-          color="black"
-      >
-        To Catalogs
-      </router-link>
-    </h2>
   </div>
 </template>
 
@@ -37,7 +29,7 @@ export default {
   methods: {
     getHomePageInformation() {
       this.$axios
-        .get('http://localhost:8080/backend/test')
+        .get('http://localhost:8080/backend/catalogs')
         .then((response) => {
           console.log('Get response: ', response.data);
           this.data = response.data;

@@ -4,6 +4,7 @@ import Home from '../components/Home.vue';
 import NotFound from '../components/NotFound.vue';
 import SignIn from '../components/SignIn.vue';
 import Secured from '../components/Secured.vue';
+import Catalogs from "@/components/Catalogs";
 
 Vue.use(Router);
 
@@ -24,6 +25,11 @@ const router = new Router({
       path: '/frontend/secured',
       name: 'Secured',
       component: Secured,
+    },
+    {
+      path: '/frontend/catalogs',
+      name: 'Catalogs',
+      component: Catalogs,
     },
     {
       path: '/frontend/signIn',
