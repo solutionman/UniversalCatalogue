@@ -1,4 +1,6 @@
 
+sudo service postgresql start
+
 cd backend
 mvn clean install
 java -jar target/catalog.jar
