@@ -5,6 +5,7 @@ import NotFound from '../components/NotFound.vue';
 import SignIn from '../components/SignIn.vue';
 import Secured from '../components/Secured.vue';
 import Catalogs from "@/components/Catalogs";
+import NewCatalog from "@/components/NewCatalog";
 
 Vue.use(Router);
 
@@ -30,6 +31,11 @@ const router = new Router({
       path: '/frontend/catalogs',
       name: 'Catalogs',
       component: Catalogs,
+    },
+    {
+      path: '/frontend/newcatalog',
+      name: 'NewCatalog',
+      component: NewCatalog,
     },
     {
       path: '/frontend/signIn',

@@ -3,8 +3,11 @@ package com.universal.catalog.controller;
 import com.universal.catalog.entity.Catalog;
 import com.universal.catalog.repository.CatalogRepository;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,4 +27,11 @@ public class CatalogController {
         result.put("catalogs", catalogList);
         return result;
     }
+
+    @PostMapping(value = "newcatalog")
+    Map<String, Object> newCatalog(@RequestBody Map<String, Object> fromForm){
+
+        return new HashMap<>();
+    }
+    
 }

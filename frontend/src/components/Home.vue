@@ -19,6 +19,14 @@
         To Catalogs
       </router-link>
     </h2>
+    <h2>
+      <router-link
+          to="/frontend/newcatalog"
+          color="black"
+      >
+        New Catalog
+      </router-link>
+    </h2>
   </div>
 </template>
 
